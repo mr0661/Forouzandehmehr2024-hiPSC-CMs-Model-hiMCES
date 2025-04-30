@@ -59,7 +59,7 @@ IfRedMed = 1;
  myLatinHypercubeVector = ones(1,23);
 % myLatinHypercubeVector(1:12) = latinHypercubeVector; %used for hiMCES_SET
 
-%% 0: Temperature = 37°C , 1: Temperature = 21°C
+%% 0: Temperature = 37Â°C , 1: Temperature = 21Â°C
 classicVSoptic = 0;
 
 %% 0: spontaneous beating, 1: paced.
@@ -152,8 +152,8 @@ for i= 1:size(Yc,1)
     kon(i) = dati(38);
 end
 result       = [INa; If; ICaL; Ito; IKs; IKr; IK1; INaCa; INaK; IpCa; IbNa; IbCa; Irel; Iup; Ileak; Istim; E_K; E_Na; INaL];
-mat_corrents = [INa; If; ICaL; Ito; IKs; IKr; IK1; INaCa; INaK; IpCa; IbNa; IbCa; Irel; Iup; Ileak; Istim; INaL];
-I_tot=sum(mat_corrents);
+mat_currents = [INa; If; ICaL; Ito; IKs; IKr; IK1; INaCa; INaK; IpCa; IbNa; IbCa; Irel; Iup; Ileak; Istim; INaL];
+I_tot=sum(mat_currents);
 
 toc
 % End
